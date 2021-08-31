@@ -16,38 +16,40 @@
             </p>
             <label for="billAmount">Bill Amount</label>
             <input type="number" name="billAmount" id="billAmount" placeholder="enter bill amount">
-            <label for="cashGiven">Cash Given</label>
-            <input type="number" name="cashGiven" id="cashGiven" placeholder="enter cash given">
-            <button id="checkButton" class="button">Check</button>
-            <p id="errorMessage"></p>
-
-            <div class="table">
-                <table class="noteReturn">
-                    <caption>Return Change: <span id="caption"></span></caption>
-                    <tr>
-                        <th>No. of Notes</th>
-                        <td class="no-Of-Notes"></td>
-                        <td class="no-Of-Notes"></td>
-                        <td class="no-Of-Notes"></td>
-                        <td class="no-Of-Notes"></td>
-                        <td class="no-Of-Notes"></td>
-                        <td class="no-Of-Notes"></td>
-                        <td class="no-Of-Notes"></td>
-                        <td class="no-Of-Notes"></td>
-                    </tr>
-                    <tr>
-                        <th>Notes</th>
-                        <td>2000</td>
-                        <td>500</td>
-                        <td>100</td>
-                        <td>50</td>
-                        <td>20</td>
-                        <td>10</td>
-                        <td>5</td>
-                        <td>1</td>
-                    </tr>
-                </table>
+            <button id="nextButton" class="button">Next</button>
+            <div id="nextInput">
+                <label for="cashGiven">Cash Given</label>
+                <input type="number" name="cashGiven" id="cashGiven" placeholder="enter cash given">
+                <button id="checkButton" value="submit" class="button">Check</button>
+                <div class="table">
+                    <table class="noteReturn">
+                        <caption>Return Change: <span id="caption"></span></caption>
+                        <tr>
+                            <th>No. of Notes</th>
+                            <td class="no-Of-Notes"></td>
+                            <td class="no-Of-Notes"></td>
+                            <td class="no-Of-Notes"></td>
+                            <td class="no-Of-Notes"></td>
+                            <td class="no-Of-Notes"></td>
+                            <td class="no-Of-Notes"></td>
+                            <td class="no-Of-Notes"></td>
+                            <td class="no-Of-Notes"></td>
+                        </tr>
+                        <tr>
+                            <th>Notes</th>
+                            <td>2000</td>
+                            <td>500</td>
+                            <td>100</td>
+                            <td>50</td>
+                            <td>20</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
+            <p id="errorMessage"></p>
         </div>
     </div>
 

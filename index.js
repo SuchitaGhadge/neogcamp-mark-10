@@ -4,8 +4,19 @@ const checkButton = document.querySelector("#checkButton");
 const message = document.querySelector("#errorMessage");
 const noOfNotes = document.querySelectorAll('.no-Of-Notes')
 const returnCash = document.querySelector("#caption")
+const nextInput = document.querySelector("#nextInput")
 
 const availableNotes = [2000, 500, 100, 50, 20, 10, 5, 1];
+
+nextButton.addEventListener("click", function validateBillAmount(){
+    if(billAmount.value>0){
+        showInput()
+    }else{
+        showMessage("Bill amount should be greater than 0")
+    }
+});
+
+
 
 checkButton.addEventListener("click", function ValidateAmount(){
     hideMessage();
@@ -42,4 +53,8 @@ function calculateReturn(returnAmount){
         noOfNotes[i].innerText = numberOfNotes;
     };
    
+}
+
+function showInput(){
+    nextInput.style.display = "flex"
 }
